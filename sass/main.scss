@@ -1,0 +1,173 @@
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+body{
+    box-sizing: border-box;
+    background-color: black	
+}
+html{
+    font-size: 62.5%; /* 1rem = 62.5% of 16px = 10px (root size) */
+}   
+
+.maincontainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    width: 36rem;
+    padding-left: 1rem
+}
+
+.storyBackground{
+    margin-top: 2rem;
+    width: 13.8rem;
+    height: 13.8rem;
+    border-radius: 50%;
+    background-image: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 90%);
+    background-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.storyPicture{
+    width: 13rem;
+    height: 13rem;
+    border-radius: 50%;
+    border-width: 10rem;
+    border-color: black
+}
+.fab{
+    color: black
+}
+
+.fa-facebook-f, .fa-instagram, .fa-whatsapp{
+    font-size: 4.5rem;
+}
+
+.procedimentos{
+
+    &Container{
+    background-color: white;
+    clip-path: polygon(0 12%, 100% 0 , 100% 88%, 0 100%);
+    height: 33vh;
+    width: 100vw;
+    }
+
+    &Items{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items:  center;
+        margin-top: 3.8rem;
+        font-size: 2.5rem;
+        font-family: 'Cabin', sans-serif;
+        list-style: none;
+        text-transform: uppercase;
+        line-height: 4rem;
+        font-weight: 400;
+    }
+}
+.iconWrapper{
+    margin-top: 1rem;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white
+}
+
+.socialIcons{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer{
+    color: white;
+    font-family: 'Cabin', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 4rem;
+    font-size: 2rem
+}
+.locationIcon{
+    margin-right: 1rem
+}
+.address{
+    margin-bottom: 1rem
+}
+.warning{
+    color: white;
+    font-family: 'Cabin', sans-serif;
+    text-align: center;
+    margin-top: 1.5rem;
+    font-size: 2rem;
+    font-weight: 700
+
+
+}
+
+@media only screen and (max-width: 320px){
+    html{
+        font-size: 55%
+    }
+    .procedimentosContainer{
+        height: 29.5vh;
+    }
+}
+
+@media only screen and (max-height: 750px){
+    .procedimentos{
+        &Container{
+            height: 33vh;
+    }
+        &Items{
+            font-size: 2rem;
+            margin-top: 2.3rem
+        }
+}
+    .footer{
+        margin-top: 2.5rem;
+        font-size: 1.5rem
+    }
+}
+
+@media only screen and (max-height: 670px){
+    .procedimentosItems{
+        font-size: 1.7rem;
+        margin-top: 2rem
+    }
+    .procedimentosContainer{
+        height: 35vh;
+    }
+    .fa-facebook-f, .fa-instagram, .fa-whatsapp{
+        font-size: 3.5rem;
+    }
+    .iconWrapper{
+        width: 5rem;
+        height:  5rem;
+    }
+    .storyPicture{
+        width: 10rem;
+        height: 10rem;
+    }
+    .storyBackground{
+        width: 10.8rem;
+        height: 10.8rem;
+    }
+    .socialIcons{
+        margin-top: 1.5rem
+    }
+}
+
+
