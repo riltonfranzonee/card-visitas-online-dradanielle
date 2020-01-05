@@ -41,16 +41,17 @@ html {
   border-width: 10rem;
   border-color: black; }
 
-.fab {
+.fab, .far {
   color: black; }
 
-.fa-facebook-f, .fa-instagram, .fa-whatsapp {
-  font-size: 4.5rem; }
+.fa-facebook-f, .fa-instagram, .fa-whatsapp, .fa-envelope {
+  font-size: 4rem; }
 
 .procedimentosContainer {
   background-color: white;
   clip-path: polygon(0 12%, 100% 0, 100% 88%, 0 100%);
-  height: 33vh;
+  -webkit-clip-path: polygon(0 12%, 100% 0, 100% 88%, 0 100%);
+  height: 32vh;
   width: 100vw; }
 
 .procedimentosItems {
@@ -68,8 +69,8 @@ html {
 
 .iconWrapper {
   margin-top: 1rem;
-  width: 6rem;
-  height: 6rem;
+  width: 5.5rem;
+  height: 5.5rem;
   border-radius: 1rem;
   display: flex;
   justify-content: center;
@@ -99,7 +100,7 @@ html {
   color: white;
   font-family: 'Cabin', sans-serif;
   text-align: center;
-  margin-top: 1.5rem;
+  margin-top: 4rem;
   font-size: 2rem;
   font-weight: 700; }
 
@@ -109,6 +110,31 @@ html {
   .procedimentosContainer {
     height: 29.5vh; } }
 
+@media only screen and (max-height: 1200px) and (min-height: 1000px) {
+  .storyBackground {
+    width: 16.8rem;
+    height: 16.8rem; }
+  .storyPicture {
+    width: 16rem;
+    height: 16rem; }
+  .logo {
+    width: 60rem; }
+  .procedimentosItems {
+    margin-top: 5rem;
+    font-size: 4.5rem;
+    line-height: 6.5rem; }
+  .procedimentosContainer {
+    height: 40vh; }
+  .warning {
+    margin-top: 2rem; }
+  .iconWrapper {
+    width: 8rem;
+    height: 8rem; } }
+
+@media only screen and (min-height: 830px) and (max-height: 870px) {
+  .procedimentosItems {
+    margin-top: 4.5rem; } }
+
 @media only screen and (max-height: 750px) {
   .procedimentosContainer {
     height: 33vh; }
@@ -117,7 +143,9 @@ html {
     margin-top: 2.3rem; }
   .footer {
     margin-top: 2.5rem;
-    font-size: 1.5rem; } }
+    font-size: 1.5rem; }
+  .warning {
+    margin-top: 2.5rem; } }
 
 @media only screen and (max-height: 670px) {
   .procedimentosItems {
@@ -137,4 +165,15 @@ html {
     width: 10.8rem;
     height: 10.8rem; }
   .socialIcons {
-    margin-top: 1.5rem; } }
+    margin-top: 1.5rem; }
+  .warning {
+    margin-top: 2rem; } }
+
+@media only screen and (max-height: 650px) {
+  .logo {
+    width: 30rem; }
+  .procedimentosItems {
+    line-height: 3.2rem;
+    margin-top: 2.2rem; }
+  .procedimentosContainer {
+    height: 31vh; } }
