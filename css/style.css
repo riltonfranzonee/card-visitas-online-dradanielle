@@ -48,6 +48,9 @@ html {
   font-size: 4rem; }
 
 .procedimentosContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: white;
   clip-path: polygon(0 12%, 100% 0, 100% 88%, 0 100%);
   -webkit-clip-path: polygon(0 12%, 100% 0, 100% 88%, 0 100%);
@@ -57,10 +60,9 @@ html {
 .procedimentosItems {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
-  margin-top: 3.8rem;
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-family: 'Cabin', sans-serif;
   list-style: none;
   text-transform: uppercase;
@@ -120,7 +122,6 @@ html {
   .logo {
     width: 60rem; }
   .procedimentosItems {
-    margin-top: 5rem;
     font-size: 4.5rem;
     line-height: 6.5rem; }
   .procedimentosContainer {
@@ -131,16 +132,11 @@ html {
     width: 8rem;
     height: 8rem; } }
 
-@media only screen and (min-height: 830px) and (max-height: 870px) {
-  .procedimentosItems {
-    margin-top: 4.5rem; } }
-
 @media only screen and (max-height: 750px) {
   .procedimentosContainer {
     height: 33vh; }
   .procedimentosItems {
-    font-size: 3.2rem;
-    margin-top: 3.2rem; }
+    font-size: 2.5rem; }
   .footer {
     margin-top: 2.5rem;
     font-size: 1.5rem; }
@@ -149,8 +145,7 @@ html {
 
 @media only screen and (max-height: 670px) {
   .procedimentosItems {
-    font-size: 1.7rem;
-    margin-top: 2rem; }
+    font-size: 1.8rem; }
   .procedimentosContainer {
     height: 35vh; }
   .fa-facebook-f, .fa-instagram, .fa-whatsapp {
@@ -173,7 +168,6 @@ html {
   .logo {
     width: 30rem; }
   .procedimentosItems {
-    line-height: 3.2rem;
-    margin-top: 2.2rem; }
+    line-height: 3.2rem; }
   .procedimentosContainer {
     height: 31vh; } }
