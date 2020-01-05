@@ -130,34 +130,6 @@ html{
     }
 }
 
-@media only screen and (max-height: 1200px) and (min-height: 1000px){
-    .storyBackground{
-        width: 16.8rem;
-        height: 16.8rem;
-    }
-    .storyPicture{
-        width: 16rem;
-        height: 16rem;
-    }
-    .logo{
-        width: 60rem
-    }
-    .procedimentosItems{
-        font-size: 4.5rem;
-        line-height: 6.5rem
-    }
-    .procedimentosContainer{
-        height: 40vh
-    }
-    .warning{
-        margin-top: 2rem
-    }
-    .iconWrapper{
-        width: 8rem;
-        height: 8rem;
-    }
-}
-
 @media only screen and (max-height: 750px){
     .procedimentos{
         &Container{
@@ -178,7 +150,7 @@ html{
 
 @media only screen and (max-height: 670px){
     .procedimentosItems{
-        font-size: 1.8rem;
+        font-size: 2.1rem;
     }
     .procedimentosContainer{
         height: 35vh;
